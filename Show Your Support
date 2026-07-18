@@ -1,0 +1,29 @@
+
+---
+
+## 📂 Files to Include in Your Repository
+
+Make sure these files are in your `BankShieldAI` folder before pushing:
+
+- `index.html`
+- `api.py`
+- `requirements.txt`
+- `README.md` (copy from above)
+- `fraud_model.json` (your trained model)
+- `feature_names.json` (feature order)
+
+### Optional but good for deployment:
+- `Procfile` (for Render)
+- `.gitignore` (to ignore `__pycache__` and `.pkl` backups)
+
+---
+
+## 🚀 Push to GitHub
+
+```bash
+git init
+git add .
+git commit -m "Initial commit: BankShield AI fraud detection platform"
+git branch -M main
+git remote add origin https://github.com/your-username/BankShield-AI.git
+git push -u origin main
