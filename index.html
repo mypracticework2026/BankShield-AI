@@ -1495,11 +1495,11 @@
                 resultTitle.textContent = 'Predicting...';
                 resultSub.textContent = 'Contacting AI engine';
 
-                fetch('http://localhost:8001/predict', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    })
+                fetch('https://bankshield-ai.onrender.com/predict', {
+                                   method: 'POST',
+                                  headers: { 'Content-Type': 'application/json' },
+                                  body: JSON.stringify(payload)
+                                                          })
                     .then(response => {
                         if (!response.ok) throw new Error('API error');
                         return response.json();
